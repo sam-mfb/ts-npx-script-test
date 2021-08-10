@@ -1,0 +1,67 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+
+  "rushVersion": "5.50.0",
+
+  "pnpmVersion": "6.7.1",
+
+  "pnpmOptions": {
+     "pnpmStore": "local",
+     "strictPeerDependencies": true,
+     "resolutionStrategy": "fewer-dependencies",
+     "preventManualShrinkwrapChanges": true
+  },
+
+  "nodeSupportedVersionRange": ">=14.15.0 <15.0.0",
+
+  "ensureConsistentVersions": true,
+
+  "approvedPackagesPolicy": {
+    "reviewCategories": [
+      "distributed", 
+      "development-only"      
+    ],
+     "ignoredNpmScopes": ["@types"]
+  },
+
+  "repository": {
+     "url": "https://github.com/sam-mfb/ts-mono-test",
+     "defaultBranch": "main",
+     "defaultRemote": "origin"
+  },
+
+  /**
+   * Event hooks are customized script actions that Rush executes when specific events occur
+   */
+  "eventHooks": {
+    /**
+     * The list of shell commands to run before the Rush installation starts
+     */
+    "preRushInstall": [
+      // "common/scripts/pre-rush-install.js"
+    ],
+
+    /**
+     * The list of shell commands to run after the Rush installation finishes
+     */
+    "postRushInstall": [],
+
+    /**
+     * The list of shell commands to run before the Rush build command starts
+     */
+    "preRushBuild": [],
+
+    /**
+     * The list of shell commands to run after the Rush build command finishes
+     */
+    "postRushBuild": []
+  },
+
+  "projects": [
+    {
+      "packageName": "@test/foo",
+      "projectFolder": "utils/foo",
+      "reviewCategory": "distributed"
+    }
+  ]
+}

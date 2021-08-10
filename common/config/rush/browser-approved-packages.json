@@ -1,0 +1,22 @@
+// DO NOT ADD COMMENTS IN THIS FILE.  They will be lost when the Rush tool resaves it.
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
+  "packages": [
+    {
+      "name": "jest",
+      "allowedCategories": [ "distributed" ]
+    },
+    {
+      "name": "rimraf",
+      "allowedCategories": [ "distributed" ]
+    },
+    {
+      "name": "ts-jest",
+      "allowedCategories": [ "distributed" ]
+    },
+    {
+      "name": "typescript",
+      "allowedCategories": [ "distributed" ]
+    }
+  ]
+}
