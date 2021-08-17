@@ -60,7 +60,12 @@
   "projects": [
     {
       "packageName": "@test/foo",
-      "projectFolder": "utils/foo",
+      "projectFolder": "projects/foo",
+      "reviewCategory": "distributed"
+    },
+    {
+      "packageName": "@test/bar",
+      "projectFolder": "projects/bar",
       "reviewCategory": "distributed"
     }
   ]

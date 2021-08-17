@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "outDir": "bin",
+    "declaration": true,
+    "target": "es5",
+    "lib": ["esnext"],
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "types":["node"]
+  },
+  "include": ["src"]
+}
